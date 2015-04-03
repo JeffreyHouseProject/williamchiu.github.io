@@ -14,7 +14,8 @@ I forked Jekyll Now to start the site. (Sue me)
 I mean, dont. Jekyll Now is awesome. Jekyll Now is both easy and convenient, but most importantly, it looks hot. I see the 1.6 line height. I see the slight grays and the center alignment. That Jekyll Now CSS is spot on.
 
 Anyways, since this is supposed to be a code-learning experience, I will probably adjust things to better suit my tastes.</br>
-Small things.
+
+### Small things.
 
   * line-height: 1.8;
 
