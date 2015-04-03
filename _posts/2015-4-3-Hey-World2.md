@@ -12,15 +12,15 @@ Overall, I'm liking Jekyll. Jekyll Now is easy and convenient, but most importan
 Anyways, since this is supposed to be a code-learning experience, I will probably adjust things to better suit my tastes.</br>
 Small things.
 
-⋅⋅* line-height: 1.8;
+  * line-height: 1.8;
 
 Got to space out my lines a bit more.
 
-⋅⋅* mobile stuff bye.
+  * mobile stuff bye.
 
 I'll regret this later, but I felt like it.
 
-⋅⋅* padding around content... or is it margin?
+  * padding around content... or is it margin?
 
 Its crowded near the bottom.
 
