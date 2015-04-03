@@ -18,9 +18,10 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  line-height: 1.4;
 }
 
 .container {
