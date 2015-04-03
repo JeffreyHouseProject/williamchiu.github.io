@@ -4,7 +4,6 @@ title: Quick follow up.
 ---
 
 ## Blogging with Jekyll
-
 I planned to start a blog using Jekyll back in January. It's been on the backburner ever since.
 
 Overall, I'm liking Jekyll. 
