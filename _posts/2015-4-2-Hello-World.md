@@ -10,7 +10,6 @@ At the beginning of the year, there was a grade meeting for the Juniors where we
 
 Part of me disagrees. Junior year is filled to the brim with stress for who knows what reason. In the coming months, there are oppressive loads of final exams, final presentations, and standardized testing.
 
-
 Stress stress stress. 
 Not to mention stress that school is still in session and that grades are still a thing. 
 Stress that I probably would not understand a decade or two down the road. 
