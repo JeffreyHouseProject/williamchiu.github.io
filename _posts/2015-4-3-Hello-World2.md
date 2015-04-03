@@ -21,11 +21,11 @@ Anyways, since this is supposed to be a code-learning experience, I will probabl
 
 Got to space out my lines a bit more.
 
-  * mobile stuff goes bye.
+  * Mobile stuff goes bye.
 
 I'll regret this later, but I felt like it. It makes the code alot easier to skim through. Actually... no it doesnt.
 
-  * padding around content... or is it margin?
+  * A line break between the entry and the date
 
 Its crowded near the bottom.
 
