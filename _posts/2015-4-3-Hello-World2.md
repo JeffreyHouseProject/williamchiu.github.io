@@ -6,9 +6,9 @@ title: Quick follow up.
 ## Blogging with Jekyll
 I planned to start a blog using Jekyll back in January. It's been on the backburner ever since.
 
-Overall, I'm liking Jekyll. 
+Overall, now that I have got around to using it, I'm liking Jekyll. 
 
-I forked Jekyll Now to start the site. (Sue me)
+To start the site, I forked Jekyll Now. (Sue me)
 
 I mean, dont. Jekyll Now is awesome. Jekyll Now is both easy and convenient, but most importantly, it looks hot. I see the 1.6 line height. I see the slight grays and the center alignment. That Jekyll Now CSS is spot on.
 
