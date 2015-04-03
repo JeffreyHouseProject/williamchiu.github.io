@@ -30,6 +30,40 @@ body {
   width: 100%;
 }
 
+-h1, h2, h3, h4, h5, h6 {
+-  font-family: $helveticaNeue;
+-  color: $darkerGray;
+-  font-weight: bold;
+-
+-  line-height: 1.9;
+-  margin: 1em 0 15px;
+-  padding: 0;
+-}
+-
+-h1 {
+-  font-size: 30px;
+-  a {
+-    color: inherit;
+-  }
+-}
+-
+-h2 {
+-  font-size: 24px;
+-}
+-
+-h3 {
+-  font-size: 20px;
+-}
+-
+-h4 {
+-  font-size: 18px;
+-}
+-
+-p {
+-  margin: 15px 0;
+-  line-height: 1.8;
+-}
+
 a {
   color: $blue;
   text-decoration: none;
