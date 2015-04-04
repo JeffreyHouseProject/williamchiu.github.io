@@ -99,6 +99,68 @@ org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 4296
 	at processing.mode.java.runner.Runner$2.run(Runner.java:688)
 ```
 
+A stack overflow :(
+
+Shoot. So what do?
+
+Get rid of the recursive calls. Lets look at another Wikipedia pseudo code.
+
+```
+Flood-fill (node, target-color, replacement-color):
+ 1. If target-color is equal to replacement-color, return.
+ 2. Set Q to the empty queue.
+ 3. Add node to the end of Q.
+ 4. While Q is not empty: 
+ 5.     Set n equal to the first element of Q.
+ 6.     Remove first element from Q.
+ 7.     If the color of n is equal to target-color:
+ 8.         Set the color of n to replacement-color and mark "n" as processed.
+ 9.         Add west node to end of Q if west has not been processed yet.
+ 10.        Add east node to end of Q if east has not been processed yet.
+ 11.        Add north node to end of Q if north has not been processed yet.
+ 12.        Add south node to end of Q if south has not been processed yet.
+ 13. Return.
+```
+
+To implement an equivalent in Processing, we could use an Arraylist and a while loop.
+
+### Processing Attempt No 2
+```java
+import java.util.ArrayList;
+
+void setup() {
+  size(700, 1200);
+  rect(0, 0, 500, 500);
+}
+
+void draw() {
+}
+
+void mousePressed() {
+  floodFill(mouseY * width + mouseX, get(mouseX, mouseY), color(255, 0, 0));
+}
+
+void floodFill(int pixelNumber, color targetColor, color replacementColor) {
+  ArrayList<Integer> queue = new ArrayList<Integer>();
+  loadPixels();
+  queue.add(pixelNumber);
+  while (!queue.isEmpty()) {
+    if (targetColor != replacementColor && queue.get(0) < width * height && queue.get(0) > 0) {
+      if (pixels[queue.get(0)] == targetColor) {
+        pixels[queue.get(0)] = replacementColor;
+        queue.add(queue.get(0) + 1);
+        queue.add(queue.get(0) - 1);
+        queue.add(queue.get(0) + width);
+        queue.add(queue.get(0) - width);
+      }
+    }
+    queue.remove(0);
+  }
+  updatePixels();
+}
+```
+
+And thats it!
 
 
 
