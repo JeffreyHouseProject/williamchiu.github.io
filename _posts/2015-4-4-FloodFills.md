@@ -48,17 +48,17 @@ Flood-fill (node, target-color, replacement-color):
  
  ```Processing
  floodFill(int pixelNumber, color targetColor, color replacementColor) {
- loadPixels();
- if (targetColor != replacementColor) {
- if (pixels[pixelNumber] == targetColor) {
- pixels[pixelNumber] = replacementColor;
- floodFill(node + 1, targetColor, replacementColor);
- floodFill(node - 1, targetColor, replacementColor);
- floodFill(node + width, targetColor, replacementColor);
- floodFill(node - width, targetColor, replacementColor);
- updatePixels();
- }
- }
+  loadPixels();
+  if (targetColor != replacementColor) {
+   if (pixels[pixelNumber] == targetColor) {
+    pixels[pixelNumber] = replacementColor;
+    floodFill(node + 1, targetColor, replacementColor);
+    floodFill(node - 1, targetColor, replacementColor);
+    floodFill(node + width, targetColor, replacementColor);
+    floodFill(node - width, targetColor, replacementColor);
+    updatePixels();
+   }
+  }
  }
  ```
 
