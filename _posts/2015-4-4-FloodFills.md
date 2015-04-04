@@ -3,7 +3,7 @@ layout: post
 title: The "Paintbucket"
 ---
 
-## The thing with flood fills.
+## Flood fills are difficult and stupid
 In image editing software, you see paintbuckets all the time. 
 
 In photoshop, for example, the paintbucket is the tool that fills in an area that share the same color.
@@ -46,23 +46,25 @@ From that heading, you probably already have an idea of how this is gonna go.
  
 Anyways, here was Processing code that I thought reflected the Flood-fill pseudo code.
 
-```
- floodFill(int pixelNumber, color targetColor, color replacementColor) {
+```java
+void floodFill(int pixelNumber, color targetColor, color replacementColor) {
   loadPixels();
   if (targetColor != replacementColor) {
-   if (pixels[pixelNumber] == targetColor) {
-    pixels[pixelNumber] = replacementColor;
-    floodFill(node + 1, targetColor, replacementColor);
-    floodFill(node - 1, targetColor, replacementColor);
-    floodFill(node + width, targetColor, replacementColor);
-    floodFill(node - width, targetColor, replacementColor);
-    updatePixels();
-   }
+    if (pixels[pixelNumber] == targetColor) {
+      pixels[pixelNumber] = replacementColor;
+      floodFill(pixelNumber + 1, targetColor, replacementColor);
+      floodFill(pixelNumber - 1, targetColor, replacementColor);
+      floodFill(pixelNumber + width, targetColor, replacementColor);
+      floodFill(pixelNumber - width, targetColor, replacementColor);
+      updatePixels();
+    }
   }
- }
+}
 ```
 
-Lets see how that goes..
+Except that does not work.
+
+
 
  
 
