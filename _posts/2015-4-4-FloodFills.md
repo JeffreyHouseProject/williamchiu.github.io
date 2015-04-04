@@ -46,19 +46,4 @@ Flood-fill (node, target-color, replacement-color):
  
  Anyways, here was Processing code that I thought reflected the Flood-fill pseudo code.
  
- ```Processing
- floodFill(int pixelNumber, color targetColor, color replacementColor) {
-  loadPixels();
-  if (targetColor != replacementColor) {
-   if (pixels[pixelNumber] == targetColor) {
-    pixels[pixelNumber] = replacementColor;
-    floodFill(node + 1, targetColor, replacementColor);
-    floodFill(node - 1, targetColor, replacementColor);
-    floodFill(node + width, targetColor, replacementColor);
-    floodFill(node - width, targetColor, replacementColor);
-    updatePixels();
-   }
-  }
- }
- ```
 
