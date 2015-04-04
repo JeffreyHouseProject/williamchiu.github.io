@@ -78,11 +78,9 @@ void floodFill(int pixelNumber, color targetColor, color replacementColor) {
 }
 ```
 
-If you test this...
+Don't waste your time testing this junk. Its slow and only works when you click a small area.
 
-Nice, you've got a slow paintbucet tool that only works when you click the small square. 
-
-When you click outside of the square, you get an error something like this..
+When you click outside of the 50 x 50 square, you get an error something like this..
 
 ```
 crashed in event thread due to Timeout occurred while waiting for packet 4296.
@@ -99,9 +97,9 @@ org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 4296
 	at processing.mode.java.runner.Runner$2.run(Runner.java:688)
 ```
 
-A stack overflow :(
+Processing alternative to a stack overflow :(
 
-Shoot. So what do?
+What do?
 
 Get rid of the recursive calls. Lets look at another Wikipedia pseudo code.
 
