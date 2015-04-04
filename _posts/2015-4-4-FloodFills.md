@@ -34,4 +34,10 @@ Flood-fill (node, target-color, replacement-color):
     Perform Flood-fill (one step to the south of node, target-color, replacement-color).
  5. Return.
  ```
+ 
+ After a minute or two, you probably could see what Wikipedia is getting at.
+ 
+ This method takes a node (to indicate a spot), a target-color, and a replacement-color. It performs checks on the node and replaces its color if the node is of the target-color. Then it calls itself again for all the spots around the node so as to cover the entire area.
+ 
+ Cool. Lets try this in Processing.
 
