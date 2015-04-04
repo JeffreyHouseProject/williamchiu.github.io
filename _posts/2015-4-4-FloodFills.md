@@ -8,7 +8,7 @@ In image editing software, you see paintbuckets all the time.
 
 In photoshop, for example, the paintbucket is the tool that fills in an area that share the same color.
 
-Could the same thing be done on Processing?
+.. But how do we do the same thing on Processing?
 
 ### What are flood fills?
 When you fill an area of a photo using a paintbucket tool, what are you doing?
