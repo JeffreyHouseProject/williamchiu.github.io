@@ -37,7 +37,28 @@ Flood-fill (node, target-color, replacement-color):
  
  After a minute or two, you probably could see what Wikipedia is getting at.
  
- This method takes a node (to indicate a spot), a target-color, and a replacement-color. It performs checks on the node and replaces its color if the node is of the target-color. Then it calls itself again for all the spots around the node so as to cover the entire area.
+ This method takes a node (to indicate a spot), a target-color, and a replacement-color. It performs checks on the node and replaces its color if the node is of the target-color. Then it calls itself again for all the spots around the node so as to cover the entire area. By doing this, the method successfully fills an entire area with the replacement-color!
  
  Cool. Lets try this in Processing.
+ 
+ ### Processing Attempt No. 1
+ From that heading, you probably already have an idea of how this is gonna go.
+ 
+ Anyways, here was Processing code that I thought reflected the Flood-fill pseudo code.
+ 
+ ```Processing
+ floodFill(int pixelNumber, color targetColor, color replacementColor) {
+ loadPixels();
+ if (targetColor != replacementColor) {
+ if (pixels[pixelNumber] == targetColor) {
+ pixels[pixelNumber] = replacementColor;
+ floodFill(node + 1, targetColor, replacementColor);
+ floodFill(node - 1, targetColor, replacementColor);
+ floodFill(node + width, targetColor, replacementColor);
+ floodFill(node - width, targetColor, replacementColor);
+ updatePixels();
+ }
+ }
+ }
+ pixels[pixelNumber] == replacementColor;
 
