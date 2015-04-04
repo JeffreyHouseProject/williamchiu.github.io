@@ -46,7 +46,7 @@ From that heading, you probably already have an idea of how this is gonna go.
  
 Anyways, here was Processing code that I thought reflected the Flood-fill pseudo code.
 
-```
+```text
  floodFill(int pixelNumber, color targetColor, color replacementColor) {
   loadPixels();
   if (targetColor != replacementColor) {
