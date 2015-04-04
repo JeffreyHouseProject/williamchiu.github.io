@@ -60,5 +60,5 @@ Flood-fill (node, target-color, replacement-color):
  }
  }
  }
- pixels[pixelNumber] == replacementColor;
+ ```
 
