@@ -41,7 +41,7 @@ This method takes a node (to indicate a spot), a target-color, and a replacement
  
 Cool. Lets try this in Processing.
  
-### Processing Attempt No. 1
+### Processing Attempt No 1
 From that heading, you probably already have an idea of how this is gonna go.
  
 Anyways, here was Processing code that I thought reflected the Flood-fill pseudo code.
