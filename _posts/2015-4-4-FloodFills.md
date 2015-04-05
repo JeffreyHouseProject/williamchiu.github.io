@@ -3,8 +3,8 @@ layout: post
 title: The "Paintbucket"
 ---
 
-## Flood fills are difficult and stupid
-In image editing software, you see paintbuckets all the time. 
+## Flood fills are stupid
+Its easy to take the paintbucket tool for granted when it appears in every image editor out there.
 
 In photoshop, for example, the paintbucket is the tool that fills in an area that share the same color.
 
@@ -15,12 +15,9 @@ When you fill an area of a photo using a paintbucket tool, what are you doing?
 
 According to [Google](https://www.google.com/search?q=program+paintbucket&oq=program+paintbucket&aqs=chrome..69i57.2758j0j1&sourceid=chrome&es_sm=91&ie=UTF-8#q=how+do+fill+tools+work), you are using a floodfill.
 
-A floodfill? What's a floodfill?
+A floodfill?
 
-According to Wikipedia
->Flood fill, also called seed fill, is an algorithm that determines the area connected to a given node in a multi-dimensional array. It is used in the "bucket" fill tool of paint programs to fill connected, similarly-colored areas with a different color..
-
-So.. a flood fill is an algorithm for finding connected space. In the case of a paintbucket tool, the "connected space" would be areas of uniform color.
+A flood fill is an algorithm for finding connected space. In the case of a paintbucket tool, the "connected space" would be areas of uniform color.
 
 Cool. Now to apply this to a paintbucket tool.
 
@@ -38,8 +35,6 @@ Flood-fill (node, target-color, replacement-color):
     Perform Flood-fill (one step to the south of node, target-color, replacement-color).
  5. Return.
  ```
- 
-I hope you could see what Wikipedia is getting at.
  
 This method takes a node (to indicate a spot), a target-color, and a replacement-color. It performs checks on the node and replaces its color if the node is of the target-color. Then it calls itself again for all the spots around the node so as to cover the entire area. By doing this, the method successfully fills an entire area with the replacement-color.
  
@@ -97,11 +92,9 @@ org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 4296
 	at processing.mode.java.runner.Runner$2.run(Runner.java:688)
 ```
 
-Processing alternative to a stack overflow :(
+What is this? I have no clue. When I did this the first time I got a stack overflow. However, I'm pretty sure that both could be solved by getting rid of the recursive calls.
 
-What do?
-
-Get rid of the recursive calls. Lets look at another Wikipedia pseudo code.
+Lets look at another Wikipedia pseudo code.
 
 ```
 Flood-fill (node, target-color, replacement-color):
