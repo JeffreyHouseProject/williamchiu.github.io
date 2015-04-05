@@ -29,5 +29,5 @@ $comicNeue: ComicNeue;
 
 @font-face {
 	font-family: 'ComicNeue';
-	src: url('_assets/fonts/ComicNeue-Light.ttf');
+	src: url(asset_path('fonts/#{$icon-font-name}-Light.ttf')) format('truetype');
 }
