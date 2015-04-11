@@ -6,8 +6,6 @@ title: Beep Boop
 ## Automated Redditing
 There are lots of reddit bots made using Python. On the other hand, very few are made using Java. This is for good reason...
 
-<div class="reddit-embed"  data-embed-media="www.redditmedia.com"  data-embed-live="true"  data-embed-created="2015-04-10T17:43:37.585Z"><a href="https://www.reddit.com/r/botwatch/comments/1q1ort/java_bots/ceropg8">Comment</a> from discussion <a href="https://www.reddit.com/r/botwatch/comments/1q1ort/java_bots/">Java Bots?</a>.</div><script async src="https://www.redditstatic.com/comment-embed.js"></script>
-
 But I'm stubborn and don't have a good grasp of Python so Im gonna use Processing.
 
 ### JReddit
